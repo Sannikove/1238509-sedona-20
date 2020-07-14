@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александра Бурцева](https://up.htmlacademy.ru/adaptive/20/user/1238509).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Вадясова](https://htmlacademy.ru/profile/id46068).
 
 ---
 
