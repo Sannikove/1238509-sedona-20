@@ -3,16 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>SEDONA</title>
+  <title>Фото и видео | SEDONA</title>
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
+    <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу">
       <img src="img/logotype-small.svg" width="101" height="84" alt="Логотип сайта Седоны">
     </a>
-    <img src="img/photo-with-title-small.jpg" width="320" height="156"
-      alt="Фотография горного массива с надписью: Sedona">
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -44,7 +42,8 @@
     </nav>
   </header>
 
-  <main class="page-photo">
+  <main class="page-main gallery">
+    <img class="page-main__logo-small" src="img/title-small.jpg" width="235" height="40" alt="надпись: Sedona">
     <h1 class="gallery__title">Фото и видео</h1>
     <p class="gallery__description">
       Не можете решиться на путешествие из-за курса?
@@ -53,69 +52,77 @@
 
     <section class="gallery__section">
       <ul class="gallery__list">
-        <li class="gallery_item photo">
-          <a class="photo__link" href="page-photo.html">
-            <img src="img/photo-road.jpg" width="280" height="280" alt="Фотография дороги, уходящей в закат">
-          </a>
-          <div class="photo__description">
-            <h2 class="photo__title">Неродные просторы</h2>
-            <p class="photo__autor">Автор фото: Борис</p>
-            <div class="photo__like">
-              <button class="photo__like-button" type="button">
-                <span class="visually-hidden">Мне нравится!</span>
-              </button>
-              <span class="photo__like-counter">1350</span>
-            </div>
-          </div>
+        <li class="gallery_item">
+          <article class="photo">
+            <a class="photo__link" href="page-photo.html">
+              <img src="img/photo-road.jpg" width="280" height="280" alt="Фотография дороги, уходящей в закат">
+            </a>
+            <section class="photo__description">
+              <h2 class="photo__title">Неродные просторы</h2>
+              <p class="photo__autor">Автор фото: Борис</p>
+              <div class="photo__like">
+                <button class="photo__like-button" type="button">
+                  <span class="visually-hidden">Мне нравится!</span>
+                </button>
+                <span class="photo__like-counter">1350</span>
+              </div>
+            </section>
+          </article>
         </li>
 
-        <li class="gallery_item photo">
-          <a class="photo__link" href="page-photo.html">
-            <img src="img/photo-cactus.jpg" width="280" height="280" alt="Фотография кактуса">
-          </a>
-          <div class="photo__description">
-            <h2 class="photo__title">Местная растительность</h2>
-            <p class="photo__autor">Автор фото: Сергей</p>
-            <div class="photo__like">
-              <button class="photo__like-button" type="button">
-                <span class="visually-hidden">Мне нравится!</span>
-              </button>
-              <span class="photo__like-counter">143</span>
-            </div>
-          </div>
+        <li class="gallery_item">
+          <article class="photo">
+            <a class="photo__link" href="page-photo.html">
+              <img src="img/photo-cactus.jpg" width="280" height="280" alt="Фотография кактуса">
+            </a>
+            <section class="photo__description">
+              <h2 class="photo__title">Местная растительность</h2>
+              <p class="photo__autor">Автор фото: Сергей</p>
+              <div class="photo__like">
+                <button class="photo__like-button" type="button">
+                  <span class="visually-hidden">Мне нравится!</span>
+                </button>
+                <span class="photo__like-counter">143</span>
+              </div>
+            </section>
+          </article>
         </li>
 
-        <li class="gallery_item photo">
-          <a class="photo__link" href="page-photo.html">
-            <img src="img/photo-road-in-the-forest.jpg" width="280" height="280"
-              alt="Фотография дороги, петляющей в лесу">
-          </a>
-          <div class="photo__description">
-            <h2 class="photo__title">Дорога на север</h2>
-            <p class="photo__autor">Автор фото: Петр</p>
-            <div class="photo__like">
-              <button class="photo__like-button" type="button">
-                <span class="visually-hidden">Мне нравится!</span>
-              </button>
-              <span class="photo__like-counter">96</span>
-            </div>
-          </div>
+        <li class="gallery_item">
+          <article class="photo">
+            <a class="photo__link" href="page-photo.html">
+              <img src="img/photo-road-in-the-forest.jpg" width="280" height="280"
+                alt="Фотография дороги, петляющей в лесу">
+            </a>
+            <section class="photo__description">
+              <h2 class="photo__title">Дорога на север</h2>
+              <p class="photo__autor">Автор фото: Петр</p>
+              <div class="photo__like">
+                <button class="photo__like-button" type="button">
+                  <span class="visually-hidden">Мне нравится!</span>
+                </button>
+                <span class="photo__like-counter">96</span>
+              </div>
+            </section>
+          </article>
         </li>
 
-        <li class="gallery_item photo">
-          <a class="photo__link" href="page-photo.html">
-            <img src="img/photo-devil-bridge.jpg" width="280" height="280" alt="Фотография каньона">
-          </a>
-          <div class="photo__description">
-            <h2 class="photo__title">Мост дьявола</h2>
-            <p class="photo__autor">Автор фото: Антон</p>
-            <div class="photo__like">
-              <button class="photo__like-button" type="button">
-                <span class="visually-hidden">Мне нравится!</span>
-              </button>
-              <span class="photo__like-counter">254</span>
-            </div>
-          </div>
+        <li class="gallery_item">
+          <article class="photo">
+            <a class="photo__link" href="page-photo.html">
+              <img src="img/photo-devil-bridge.jpg" width="280" height="280" alt="Фотография каньона">
+            </a>
+            <section class="photo__description">
+              <h2 class="photo__title">Мост дьявола</h2>
+              <p class="photo__autor">Автор фото: Антон</p>
+              <div class="photo__like">
+                <button class="photo__like-button" type="button">
+                  <span class="visually-hidden">Мне нравится!</span>
+                </button>
+                <span class="photo__like-counter">254</span>
+              </div>
+            </section>
+          </article>
         </li>
       </ul>
     </section>
