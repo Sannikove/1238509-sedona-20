@@ -1,12 +1,163 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <title>SEDONA</title>
+</head>
 
-  </body>
+<body class="page-body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logotype-small.svg" width="101" height="84" alt="Логотип сайта Седоны">
+    </a>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <img class="page-main__logo" src="img/title-big.jpg" width="282" height="214"
+      alt="надпись: Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+    <h1 class="visually-hidden">Городок Седона</h1>
+
+    <section class="advantages">
+      <header class="advantages__header">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <p class="advantages__definition">
+          Седона - небольшой городок в Аризоне,
+          заслуживающий большего!
+        </p>
+        <p class="advantages__intro">
+          Рассмотрим 5 причин, по которым Седона круче,
+          чем Гранд Каньон!
+        </p>
+      </header>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--expanded">
+          <h3 class="advantages__title">Настоящий городок</h3>
+          <span class="advantages__number">-№1-</span>
+          <p class="advantages__description">
+            Седона не аттракцион для туристов, там течет своя жизнь
+          </p>
+          <img src="img/photo-green-house.jpg" width="320" height="260"
+            alt="Фотография деревянного здания зеленого цвета">
+
+          <div class="advantages__tourist-block services">
+            <dl class="services__list">
+              <div class="services__item services__item--house">
+                <dt class="services__title">Жилье</dt>
+                <dd class="services__description">
+                  Рекомендуем пожить в настоящем мотеле, все как в кино!
+                </dd>
+              </div>
+              <div class="services__item services__item--present">
+                <dt class="services__title">Сувениры</dt>
+                <dd class="services__description">
+                  Не только китайского, но и местного производства!
+                </dd>
+              </div>
+              <div class="services__item services__item--burger">
+                <dt class="services__title">Еда</dt>
+                <dd class="services__description">
+                  Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+        </li>
+        <li class="advantages__item advantages__item--expanded">
+          <h3 class="advantages__title">Там есть Мост дьявола</h3>
+          <span class="advantages__number">-№2-</span>
+          <p class="advantages__description">
+            Да, по нему можно пройти! Если вы осмелитесь, конечно
+          </p>
+          <img src="img/photo-devil-bridge.jpg" width="320" height="260" alt="Фотография каньона">
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Небольшая площадь</h3>
+          <span class="advantages__number">-№3-</span>
+          <p class="advantages__description">
+            Все интересные места находятся очень близко
+          </p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Красивая дорога</h3>
+          <span class="advantages__number">-№4-</span>
+          <p class="advantages__description">
+            Ехать в Седону из Лас-Вегаса совсем не скучно!
+          </p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Мало туристов</h3>
+          <span class="advantages__number">-№5-</span>
+          <p class="advantages__description">
+            Большинство едет в гранд каньон и толпится там
+          </p>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <h2 class="social__title">#visitsedona</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__development development">
+        <b class="development__text">Разработано:</b>
+        <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Лендинг интенсива «Профессиональный HTML и CSS, уровень 2»</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
