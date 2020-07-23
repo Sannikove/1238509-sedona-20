@@ -52,91 +52,91 @@
       </p>
     </section>
 
-    <form class="form" action="https://echo.htmlacademy.ru" method="get">
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-      <fieldset class="form__item user-info">
+      <fieldset class="form__fieldset user-info">
         <legend class="form__title">Представьтесь:</legend>
         <ul class="user-info__list">
           <li class="user-info__item">
-            <label class="user-info__label" for="user-name">Имя*:</label>
-            <input class="user-info__input" id="user-name" type="text" name="name" placeholder="Петр" required>
+            <label class="text-label" for="user-name">Имя*:</label>
+            <input class="text-input" id="user-name" type="text" name="name" placeholder="Петр" required>
           </li>
           <li class="user-info__item">
-            <label class="user-info__label" for="user-surname">Фамилия*:</label>
-            <input class="user-info__input" id="user-surname" type="text" name="surname" placeholder="Иванов" required>
+            <label class="text-label" for="user-surname">Фамилия*:</label>
+            <input class="text-input" id="user-surname" type="text" name="surname" placeholder="Иванов" required>
           </li>
           <li class="user-info__item">
-            <label class="user-info__label" for="user-patronymic">Отчество:</label>
-            <input class="user-info__input" id="user-patronymic" type="text" name="patronymic"
+            <label class="text-label" for="user-patronymic">Отчество:</label>
+            <input class="text-input" id="user-patronymic" type="text" name="patronymic"
               placeholder="Александрович">
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="form__item user-contacts">
+      <fieldset class="form__fieldset user-contacts">
         <legend class="form__title">Контактная информация:</legend>
         <ul class="user-contacts__list">
           <li class="user-contacts__item">
-            <label class="user-contacts__label" for="user-telephone">Контактный телефон*:</label>
-            <input class="user-contacts__input user-contacts__input--telephone-icon" id="user-telephone" type="tel"
+            <label class="text-label" for="user-telephone">Контактный телефон*:</label>
+            <input class="text-input text-input--telephone-icon" id="user-telephone" type="tel"
               name="telephone" placeholder="Введите телефон">
           </li>
           <li class="user-contacts__item">
-            <label class="user-contacts__label" for="user-mail">Электронная почта*:</label>
-            <input class="user-contacts__input user-contacts__input--mail-icon" id="user-mail" type="email" name="mail"
+            <label class="text-label" for="user-mail">Электронная почта*:</label>
+            <input class="text-input text-input--mail-icon" id="user-mail" type="email" name="mail"
               placeholder="Введите e-mail">
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="form__item user-review">
+      <fieldset class="form__fieldset radio">
         <legend class="form__title">Ваше общее впечатление:</legend>
-        <ul class="user-review__list">
-          <li class="user-review__item">
-            <input class="visually-hidden user-review__input user-review__input--radio" id="user-positive" type="radio"
+        <ul class="radio__list">
+          <li class="radio__item">
+            <input class="visually-hidden option-input option-input--radio" id="user-positive" type="radio"
               value="positive" name="review" checked>
-            <label class="user-review__label" for="user-positive">Скорее положительное</label>
+            <label class="option-label" for="user-positive">Скорее положительное</label>
           </li>
-          <li class="user-review__item">
-            <input class="visually-hidden user-review__input user-review__input--radio" id="user-negative" type="radio"
+          <li class="radio__item">
+            <input class="visually-hidden option-input option-input--radio" id="user-negative" type="radio"
               value="negative" name="review">
-            <label class="user-review__label" for="user-negative">Скорее отрицательное</label>
+            <label class="option-label" for="user-negative">Скорее отрицательное</label>
           </li>
-          <li class="user-review__item">
-            <input class="visually-hidden user-review__input user-review__input--radio" id="user-unclear" type="radio"
+          <li class="radio__item">
+            <input class="visually-hidden option-input option-input--radio" id="user-unclear" type="radio"
               value="unclear" name="review">
-            <label class="user-review__label" for="user-unclear">Затрудняюсь ответить</label>
+            <label class="option-label" for="user-unclear">Затрудняюсь ответить</label>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="form__item user-review">
+      <fieldset class="form__fieldset checkbox">
         <legend class="form__title">Посещенные достопримечательности:</legend>
-        <ul class="user-review__list">
-          <li class="user-review__item">
-            <input class="visually-hidden user-review__input user-review__input--checkbox" id="user-devil-bridge"
+        <ul class="checkbox__list">
+          <li class="checkbox__item">
+            <input class="visually-hidden option-input option-input--checkbox" id="user-devil-bridge"
               type="checkbox" name="devil-bridge" checked>
-            <label class="user-review__label" for="user-devil-bridge">Мост Дьявола</label>
+            <label class="option-label" for="user-devil-bridge">Мост Дьявола</label>
           </li>
-          <li class="user-review__item">
-            <input class="visually-hidden user-review__input user-review__input--checkbox" id="user-bell-mountain"
+          <li class="checkbox__item">
+            <input class="visually-hidden option-input option-input--checkbox" id="user-bell-mountain"
               type="checkbox" name="bell-mountain" checked>
-            <label class="user-review__label" for="user-bell-mountain">Гора-Колокол</label>
+            <label class="option-label" for="user-bell-mountain">Гора-Колокол</label>
           </li>
-          <li class="user-review__item">
-            <input class="visually-hidden user-review__input user-review__input--checkbox" id="user-slide-park"
+          <li class="checkbox__item">
+            <input class="visually-hidden option-input option-input--checkbox" id="user-slide-park"
               type="checkbox" name="slide-park" checked>
-            <label class="user-review__label" for="user-slide-park">Слайд-парк</label>
+            <label class="option-label" for="user-slide-park">Слайд-парк</label>
           </li>
-          <li class="user-review__item">
-            <input class="visually-hidden user-review__input user-review__input--checkbox" id="user-red-rocks"
+          <li class="checkbox__item">
+            <input class="visually-hidden option-input option-input--checkbox" id="user-red-rocks"
               type="checkbox" name="red-rocks">
-            <label class="user-review__label" for="user-red-rocks">Красные скалы</label>
+            <label class="option-label" for="user-red-rocks">Красные скалы</label>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="form__item user-comment">
+      <fieldset class="form__fieldset user-comment">
         <legend class="form__title">Опишите свои эмоции:</legend>
         <textarea class="user-comment__textarea" rows="10" cols="30" name="comment"
           placeholder="Опишите подробно все свои восторги "></textarea>
