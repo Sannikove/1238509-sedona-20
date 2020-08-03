@@ -1,5 +1,4 @@
 .social__title {
-  margin: 0;
   padding-top: 33px;
   .title(21px; 26px);
 }
@@ -10,8 +9,20 @@
 
 .social__link {
   background-color: @main-blue;
+
+  &:hover {
+    background-color: @medium-blue;
+  }
+
+  &:focus {
+    background-color: @dark-blue;
+  }
 }
 
 .social__link path {
   fill: @white;
+}
+
+.social__link:focus path {
+  opacity: 0.3;
 }
