@@ -5,6 +5,17 @@
   color: @black;
 }
 
-.development__link path {
-  fill: @black;
+.development__link {
+  path {
+    fill: @black;
+  }
+
+  &:hover path {
+    fill: @main-blue;
+  }
+
+  &:focus path {
+    fill: @black;
+    opacity: 0.3;
+  }
 }
