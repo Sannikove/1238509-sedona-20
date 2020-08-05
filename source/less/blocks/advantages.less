@@ -35,32 +35,6 @@
   }
 }
 
-.advantages__title {
-  padding-top: 26px;
-  .title();
-
-  @media (min-width: @tablet-width) {
-    padding-top: 43px;
-  }
-}
-
-.advantages__title--expanded {
-  color: @white;
-}
-
-.advantages__number,
-.advantages__description {
-  margin: 0;
-
-  .font(14px; 21px);
-  text-align: center;
-}
-
-.advantages__number {
-  display: block;
-}
-
-
 .advantages__item:first-child {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -83,49 +57,6 @@
       width: 295px;
     }
   }
-}
-
-.advantages__photo {
-  &--min,
-  &--max,
-  &--medium {
-    width: 100%;
-    height: 256px;
-    object-fit: cover;
-  }
-
-  &--min {
-    height: 260px;
-  }
-
-  @media (max-width: @mobile-width-only) {
-    &--medium,
-    &--max {
-      display: none;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    &--min,
-    &--max {
-      display: none;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &--medium {
-      display: none;
-    }
-
-    &--max {
-      display: block;
-    }
-  }
-}
-
-.advantages__tourist-block {
-  grid-column-start: 1;
-  grid-column-end: 3;
 }
 
 .advantages__item:nth-child(2) {
@@ -189,4 +120,72 @@
   @media (min-width: @desktop-width) {
     width: 290px;
   }
+}
+
+.advantages__title {
+  padding-top: 26px;
+  .title();
+
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+  }
+}
+
+.advantages__title--expanded {
+  color: @white;
+}
+
+.advantages__number,
+.advantages__description {
+  margin: 0;
+
+  .font(14px; 21px);
+  text-align: center;
+}
+
+.advantages__number {
+  display: block;
+}
+
+.advantages__photo {
+  &--min,
+  &--max,
+  &--medium {
+    width: 100%;
+    height: 256px;
+    object-fit: cover;
+  }
+
+  &--min {
+    height: 260px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    &--medium,
+    &--max {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &--min,
+    &--max {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--medium {
+      display: none;
+    }
+
+    &--max {
+      display: block;
+    }
+  }
+}
+
+.advantages__tourist-block {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }

@@ -11,26 +11,6 @@
   }
 }
 
-.photo__title {
-  margin: 0;
-  .font(14px; 24px);
-  font-weight: bold;
-  color: @black;
-}
-
-.photo__autor {
-  text-transform: none;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.photo__like-counter {
-  font-weight: bold;
-  color: @black;
-}
-
 .photo__link {
   &--min,
   &--max,
@@ -71,6 +51,21 @@
   }
 }
 
+.photo__title {
+  margin: 0;
+  .font(14px; 24px);
+  font-weight: bold;
+  color: @black;
+}
+
+.photo__autor {
+  text-transform: none;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
 .photo__like {
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
@@ -85,4 +80,9 @@
 .photo__like-button {
   width: 23px;
   height: 21px;
+}
+
+.photo__like-counter {
+  font-weight: bold;
+  color: @black;
 }
