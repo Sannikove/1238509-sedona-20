@@ -1,4 +1,18 @@
+.photo {
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    background-color: @input-gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @black-transparent;
+  }
+}
+
 .photo__title {
+  margin: 0;
   .font(14px; 24px);
   font-weight: bold;
   color: @black;
@@ -6,9 +20,69 @@
 
 .photo__autor {
   text-transform: none;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .photo__like-counter {
   font-weight: bold;
   color: @black;
+}
+
+.photo__link {
+  &--min,
+  &--max,
+  &--medium {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    &--medium,
+    &--max {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &--min,
+    &--max {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--medium {
+      display: none;
+    }
+
+    &--max {
+      display: block;
+    }
+  }
+}
+
+.photo__description {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 106px;
+  }
+}
+
+.photo__like {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    margin: auto 0;
+  }
+}
+
+.photo__like-button {
+  width: 23px;
+  height: 21px;
 }

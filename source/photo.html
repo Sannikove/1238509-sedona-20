@@ -45,8 +45,8 @@
 
   <main class="page-main">
     <section class="intro">
-      <div class="page-main__wrapper">
-        <img class="page-main__text-logo" src="img/text-sedona.svg" width="282" height="214" alt="надпись:Sedona">
+      <div class="page-main__wrapper page-main__wrapper--inner">
+        <img class="page-main__text-logo" src="img/text-sedona.svg" width="229" height="39" alt="надпись:Sedona">
       </div>
       <h1 class="intro__title">Фото и видео</h1>
       <p class="intro__description">
@@ -60,7 +60,11 @@
         <li class="gallery__item">
           <article class="photo">
             <a class="photo__link" href="page-photo.html">
-              <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
+              <img class="photo__link--min" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
+                alt="Фотография дороги, уходящей в закат">
+              <img class="photo__link--medium" src="img/photo-sunset-tablet@1x.jpg" width="648" height="400"
+                alt="Фотография дороги, уходящей в закат">
+              <img class="photo__link--max" src="img/photo-sunset-desktop@1x.jpg" width="1200" height="400"
                 alt="Фотография дороги, уходящей в закат">
             </a>
             <section class="photo__description">
@@ -79,7 +83,9 @@
         <li class="gallery__item">
           <article class="photo">
             <a class="photo__link" href="page-photo.html">
-              <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фотография кактуса">
+              <img class="photo__link--min" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фотография кактуса">
+              <img class="photo__link--medium" src="img/photo-cactus-tablet@1x.jpg" width="324" height="267" alt="Фотография кактуса">
+              <img class="photo__link--max" src="img/photo-cactus-desktop@1x.jpg" width="400" height="267" alt="Фотография кактуса">
             </a>
             <section class="photo__description">
               <h2 class="photo__title">Местная растительность</h2>
@@ -97,7 +103,11 @@
         <li class="gallery__item">
           <article class="photo">
             <a class="photo__link" href="page-photo.html">
-              <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280"
+              <img class="photo__link--min" src="img/photo-roads-mobile@1x.jpg" width="280" height="280"
+                alt="Фотография дороги, петляющей в лесу">
+                <img class="photo__link--medium" src="img/photo-roads-tablet@1x.jpg" width="324" height="267"
+                alt="Фотография дороги, петляющей в лесу">
+                <img class="photo__link--max" src="img/photo-roads-desktop@1x.jpg" width="400" height="267"
                 alt="Фотография дороги, петляющей в лесу">
             </a>
             <section class="photo__description">
@@ -116,7 +126,9 @@
         <li class="gallery__item">
           <article class="photo">
             <a class="photo__link" href="page-photo.html">
-              <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фотография каньона">
+              <img class="photo__link--min" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фотография каньона">
+              <img class="photo__link--medium" src="img/photo-bridge-tablet@1x.jpg" width="324" height="267" alt="Фотография каньона">
+              <img class="photo__link--max" src="img/photo-bridge-desktop@1x.jpg" width="400" height="267" alt="Фотография каньона">
             </a>
             <section class="photo__description">
               <h2 class="photo__title">Мост дьявола</h2>
@@ -168,8 +180,8 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <h2 class="page-footer__title">#visitsedona</h2>
       <div class="page-footer__social social">
-        <h2 class="social__title">#visitsedona</h2>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#">
