@@ -1,6 +1,7 @@
 .site-list {
   .list();
   background-color: @main-blue;
+  box-shadow: inset 0 1px 0 @shadow-inset;
 
   @media (min-width: @tablet-width) {
     width: 693px;
@@ -18,6 +19,16 @@
 .site-list__item a {
   .title(18px; 40px);
   color: @white;
+  box-shadow: 0 1px 0 @shadow,
+    inset 0 1px 0 @shadow-inset;
+
+  &:hover {
+    background-color: @medium-blue;
+  }
+
+  &:focus {
+    background-color: @dark-blue;
+    color: @special-white;
 
   @media (min-width: @tablet-width) {
     color: @black;
