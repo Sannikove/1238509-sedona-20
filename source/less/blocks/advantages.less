@@ -1,6 +1,11 @@
 .advantages__definition {
   padding-top: 33px;
   .title();
+
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+    .title(21px; 26px);
+  }
 }
 
 .advantages__intro {
@@ -11,20 +16,119 @@
 
 .advantages__list {
   .list();
-}
-
-.advantages__item {
   background-color: @gray;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
 }
 
 .advantages__item--expanded {
   background-color: @main-blue;
   color: @white;
+
+  .advantages__title {
+    @media (max-width: @mobile-width-only) {
+      padding-top: 39px;
+    }
+  }
+}
+
+.advantages__item:first-child {
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 256px 331px;
+  }
+
+  .advantages__text-wrapper {
+    width: 295px;
+    margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      width: 192px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 295px;
+    }
+  }
+}
+
+.advantages__item:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .advantages__text-wrapper {
+    order: 1;
+    width: 289px;
+    margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      width: 184px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 243px;
+    }
+  }
+}
+
+.advantages__item:nth-child(3) {
+  width: 268px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 189px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 315px;
+  }
+}
+
+.advantages__item:nth-child(4) {
+  width: 237px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 277px;
+  }
+}
+
+.advantages__item:nth-child(5) {
+  width: 276px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 175px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 290px;
+  }
 }
 
 .advantages__title {
   padding-top: 26px;
   .title();
+
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+  }
 }
 
 .advantages__title--expanded {
@@ -41,4 +145,16 @@
 
 .advantages__number {
   display: block;
+}
+
+.advantages__photo {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+
+.advantages__tourist-block {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }

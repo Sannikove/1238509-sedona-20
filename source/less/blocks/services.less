@@ -1,13 +1,33 @@
 .services__list {
   margin: 0;
   padding-left: 69px;
+  height: 100%;
   color: @black;
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 0;
+  }
+}
+
+.services__item {
+  @media (min-width: @tablet-width) {
+    padding-top: 158px;
+    text-align: center;
+  }
 }
 
 .services__title {
   .title();
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    text-align: center;
+  }
 }
 
 .services__description {

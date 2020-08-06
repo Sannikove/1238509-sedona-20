@@ -1,3 +1,28 @@
 .page-footer {
-  outline: 2px solid royalblue;
+  flex-shrink: 0;
+  outline: 5px solid rebeccapurple;
+  outline-offset: -5px;
+}
+
+.page-footer__title {
+  margin: 0;
+  padding-top: 33px;
+  .title(21px; 26px);
+
+  @media (min-width: @tablet-width) {
+    padding-top: 48px;
+  }
+}
+
+.page-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
 }
