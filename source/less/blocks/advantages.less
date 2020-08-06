@@ -148,42 +148,11 @@
 }
 
 .advantages__photo {
-  &--min,
-  &--max,
-  &--medium {
-    width: 100%;
-    height: 256px;
-    object-fit: cover;
-  }
-
-  &--min {
-    height: 260px;
-  }
-
-  @media (max-width: @mobile-width-only) {
-    &--medium,
-    &--max {
-      display: none;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    &--min,
-    &--max {
-      display: none;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &--medium {
-      display: none;
-    }
-
-    &--max {
-      display: block;
-    }
-  }
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
 }
+
 
 .advantages__tourist-block {
   grid-column-start: 1;
