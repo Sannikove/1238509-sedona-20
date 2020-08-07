@@ -36,8 +36,7 @@
 }
 
 .advantages__item:first-child {
-  grid-column-start: 1;
-  grid-column-end: 4;
+  .grid-column(1; 4);
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -60,8 +59,7 @@
 }
 
 .advantages__item:nth-child(2) {
-  grid-column-start: 1;
-  grid-column-end: 4;
+  .grid-column(1; 4);
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -155,6 +153,5 @@
 
 
 .advantages__tourist-block {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  .grid-column(1; 3);
 }
