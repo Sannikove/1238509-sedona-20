@@ -1,8 +1,37 @@
+.find-hotel {
+  min-height: 287px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 318px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 331px;
+  }
+}
+
 .find-hotel h3 {
   padding-top: 33px;
   .title(21px; 26px);
+
+  @media (min-width: @tablet-width) {
+    padding-top: 57px;
+    font-size: 30px;
+  }
 }
 
 .find-hotel p {
   text-align: center;
+}
+
+.find-hotel__button {
+  width: 280px;
+  height: 58px;
+  padding-top: 14px;
+  margin-top: 27px;
+  margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
 }
