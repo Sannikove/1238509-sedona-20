@@ -1,11 +1,15 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  min-height: 279px;
+  position: relative;
+  background-color: fuchsia;
 }
 
 .page-header__logo {
-  height: 84px;
-
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate (-50%, -50%);
 }
