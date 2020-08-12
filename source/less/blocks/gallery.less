@@ -13,6 +13,10 @@
   }
 }
 
+.gallery__item {
+  position: relative;
+}
+
 .gallery__item:first-child {
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
@@ -22,5 +26,11 @@
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 4;
+  }
+}
+
+.gallery__item:nth-child(3) .photo {
+  @media (min-width: @tablet-width) {
+    background-color: @photo-gray;
   }
 }
