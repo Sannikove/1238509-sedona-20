@@ -21,33 +21,30 @@
     text-align: center;
   }
 
-  &--house,
-  &--present,
-  &--burger {
+  &--house::before,
+  &--present::before,
+  &--burger::before {
+    content: "";
     position: absolute;
     top: 26px;
     left: -48px;
     background-position: 0 0;
     background-repeat: no-repeat;
-
-    path,
-    polygon,
-    circle,
-    rect {
-      fill: @main-blue;
-    }
   }
 }
 
-.services__item--house {
+.services__item--house::before {
   width: 40px;
   height: 37px;
+  background-image: url("../img/icon-house.svg");
+  background-size: 40px 37px;
 
   @media (min-width: @tablet-width) {
     top: 60px;
     left: 90px;
     width: 75px;
     height: 72px;
+    background-size: 75px 72px;
   }
 
   @media (min-width: @desktop-width) {
@@ -55,17 +52,20 @@
   }
 }
 
-.services__item--present {
+.services__item--present::before {
   top: 15px;
   left: -44px;
   width: 32px;
   height: 38px;
+  background-image: url("../img/icon-gift.svg");
+  background-size: 32px 38px;
 
   @media (min-width: @tablet-width) {
     top: 57px;
     left: 95px;
     width: 64px;
     height: 75px;
+    background-size: 64px 75px;
   }
 
   @media (min-width: @desktop-width) {
@@ -73,17 +73,20 @@
   }
 }
 
-.services__item--burger {
+.services__item--burger::before {
   top: 21px;
   left: -52px;
   width: 42px;
   height: 35px;
+  background-image: url("../img/icon-burger.svg");
+  background-size: 42px 35px;
 
   @media (min-width: @tablet-width) {
     top: 63px;
     left: 88px;
     width: 76px;
     height: 68px;
+    background-size: 76px 68px;
   }
 
   @media (min-width: @desktop-width) {
