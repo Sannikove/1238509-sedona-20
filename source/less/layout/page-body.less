@@ -1,18 +1,12 @@
-.page-body {
+.page-body__container {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
-
-.page-body__container {
-  flex: 1 0 auto;
+  height: 100%;
+  margin: 0 auto;
   background-color: @white;
 
   @media (min-width: @desktop-width) {
+    width: 1200px;
     box-shadow: 0 5px 15px @shadow;
   }
 }

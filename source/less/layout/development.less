@@ -5,16 +5,21 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding-top: 43px;
+    // padding-top: 48px;
   }
 }
 
 .development__text {
   display: block;
   margin-right: 13px;
+  font-weight: normal;
   line-height: 26px;
   text-align: center;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 48px;
+  }
 }
 
 .development__link {
@@ -29,5 +34,9 @@
   &:focus path {
     fill: @black;
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 44px;
   }
 }
