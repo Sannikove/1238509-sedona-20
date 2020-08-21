@@ -1,10 +1,49 @@
+.checkbox {
+  margin-bottom: 2px;
+}
+
 .checkbox__list {
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+    width: 450px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    width: auto;
+  }
+}
+
+.checkbox .form__title {
+  padding-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 42px;
+    text-align: center;
+  }
+}
+
+.checkbox__item {
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 45px;
+  }
+}
+
+
+.checkbox .checkbox__list {
+  @media (min-width: @tablet-width) {
+    margin-left: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
