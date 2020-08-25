@@ -1,5 +1,5 @@
 .form {
-  padding: 0 20px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -14,16 +14,29 @@
 
 .form fieldset {
   position: relative;
+  padding: 0 20px;
+
+  &::before {
+    .line-mobile();
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.form .form__fieldset--user-comment {
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .form__title {
   .title();
   padding-top: 21px;
   padding-bottom: 19px;
-
-  &::before {
-    .line-mobile();
-  }
 
   @media (min-width: @tablet-width) {
     padding-top: 70px;
@@ -81,17 +94,6 @@
       &::after {
         width: 280px;
         top: 43px;
-      }
-    }
-  }
-}
-
-.form__fieldset--radio,
-.form__fieldset--user-info {
-  @media (min-width: @tablet-width) {
-    .form__title {
-      &::before {
-        display: none;
       }
     }
   }
