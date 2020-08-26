@@ -1,3 +1,7 @@
+.user-contacts {
+  margin-bottom: 12px;
+}
+
 .user-contacts__list {
   @media (min-width: @desktop-width) {
     display: grid;
@@ -6,7 +10,54 @@
 }
 
 .user-contacts__item {
+  position: relative;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
+  }
+}
+
+.user-contacts__item .text-label {
+  padding-left: 22px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-top: 26px;
+    padding-right: 15px;
+  }
+}
+
+.user-contacts__item .text-input {
+  margin-top: 9px;
+
+  @media (min-width: @desktop-width) {
+    width: 315px;
+  }
+}
+
+.user-contacts--telephone-icon::after,
+.user-contacts--mail-icon::after {
+  content: "‎";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  width: 58px;
+  height: 58px;
+  background-color: @icon-gray;
+
+  @media (min-width: @desktop-width) {
+    bottom: 11px;
+  }
+}
+
+.user-contacts--telephone-icon::after {
+  @media (min-width: @desktop-width) {
+    right: 61px;
   }
 }
