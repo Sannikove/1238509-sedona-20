@@ -15,17 +15,32 @@
   background-size: 100% auto, cover;
   background-color: @bg-blue;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"),
+      url("../img/bg-back-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     min-width: 768px;
     height: 520px;
     background-image: url("../img/bg-intro-triangle-tablet.svg"),
       url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-intro-triangle-tablet.svg"),
+        url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     height: 524px;
     background-image: url("../img/bg-intro-triangle-desktop.svg"),
       url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg"),
+        url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -35,6 +50,7 @@
 
   @media (max-width: @mobile-width-only) {
     background-size: 100% auto, auto;
+    background-position: center bottom, -530px -450px;
   }
 
   @media (min-width: @tablet-width) {
