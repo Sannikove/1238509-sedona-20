@@ -50,7 +50,10 @@
 
   @media (max-width: @mobile-width-only) {
     background-size: 100% auto, auto;
-    background-position: center bottom, -530px -450px;
+
+    @media (min-resolution: 2dppx) {
+      background-position: center bottom, -530px -450px;
+    }
   }
 
   @media (min-width: @tablet-width) {
