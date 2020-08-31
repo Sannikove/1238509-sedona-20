@@ -39,7 +39,6 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     height: 267px;
-    background-color: blanchedalmond;
   }
 
   @media (min-width: @desktop-width) {
@@ -47,16 +46,26 @@
   }
 }
 
-.photo__link--first {
-  height: 400px;
-}
-
 .photo__link--min {
   display: block;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    height: 267px;
+    width: 100%;
+    object-fit: cover;
   }
+}
+
+.photo__link--first {
+  height: 280px;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+.photo__link--first .photo__link--min {
+  height: 100%;
 }
 
 .photo__description {

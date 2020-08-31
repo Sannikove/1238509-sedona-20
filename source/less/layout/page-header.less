@@ -1,7 +1,6 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  // min-height: 280px;
   min-height: 56px;
   position: relative;
 }
@@ -13,4 +12,18 @@
   margin-right: -50%;
   transform: translate(-50%, 0);
   z-index: 1;
+
+  @media (min-width: @desktop-width) {
+    bottom: -48px;
+  }
+
+  img {
+    width: 101px;
+    height: 84px;
+
+    @media (min-width: @desktop-width) {
+      width: 187px;
+      height: auto;
+    }
+  }
 }
