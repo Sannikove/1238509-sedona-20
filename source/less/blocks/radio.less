@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    align-items: normal;
+  }
 }
 
 .radio__item {
@@ -21,6 +25,6 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 35px;
-    margin: 0;
+    margin-left: 77px;
   }
 }

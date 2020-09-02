@@ -134,16 +134,19 @@
   width: 22px;
   height: 20px;
   margin-right: 15px;
+  padding: 0;
   border: none;
   background-color: transparent;
   opacity: 0.3;
 
+  @media (min-width: @tablet-width) {
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+
   @media (min-width: @desktop-width) {
     opacity: 1;
-
-    path {
-      fill: @white;
-    }
+    color: @white;
   }
 }
 

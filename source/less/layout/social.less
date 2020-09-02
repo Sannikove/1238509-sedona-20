@@ -6,7 +6,7 @@
   width: 156px;
   margin: 0 auto;
   padding-top: 33px;
-  padding-bottom: 30px;
+  padding-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     width: auto;
@@ -22,6 +22,7 @@
   margin-right: 6px;
   margin-bottom: 6px;
   background-color: @main-blue;
+  color: @white;
 
   &:hover {
     background-color: @medium-blue;
@@ -29,13 +30,6 @@
 
   &:focus {
     background-color: @dark-blue;
+    color: @special-white;
   }
-}
-
-.social__link path {
-  fill: @white;
-}
-
-.social__link:focus path {
-  opacity: 0.3;
 }

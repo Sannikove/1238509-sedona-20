@@ -32,15 +32,13 @@
   width: 56px;
   height: 56px;
   background-color: @input-gray;
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .option-input--radio + label::before {
   border-radius: 50%;
 
   @media (min-width: @desktop-width) {
-    left: 4px;
+    left: -74px;
   }
 }
 
@@ -55,7 +53,7 @@
   border-radius: 50%;
 
   @media (min-width: @desktop-width) {
-    left: 21px;
+    left: -56px;
   }
 }
 
@@ -71,5 +69,40 @@
   @media (min-width: @desktop-width) {
     left: 1px;
     border-radius: 0;
+  }
+}
+
+.option-input--checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 13px;
+  width: 23px;
+  height: 16px;
+  z-index: 1;
+  background-image: url("../img/icon-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    left: 18px;
+  }
+}
+
+.option-input--radio:hover,
+.option-input--checkbox:hover {
+  + label::before {
+    background-color: @medium-gray;
+  }
+}
+
+.option-input--radio:active,
+.option-input--checkbox:active {
+  + label::before {
+    background-color: @dark-gray;
+  }
+
+  + label::after {
+    opacity: 0.3;
   }
 }

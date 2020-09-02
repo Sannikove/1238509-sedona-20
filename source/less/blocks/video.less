@@ -1,6 +1,6 @@
 .video {
   position: relative;
-  margin-bottom: 72px;
+  margin-bottom: 105px;
   background-color: @white;
 
   @media (min-width: @tablet-width) {
@@ -175,50 +175,63 @@
   }
 }
 
-.video__button-replay {
+.video__button {
   position: absolute;
+  color: @video-btn-gray;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:hover {
+    color: @text-gray;
+  }
+
+  &:focus {
+    color: @text-gray;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    color: @white;
+
+    &:hover {
+      color: @white;
+      opacity: 0.6;
+    }
+
+    &:focus {
+      color: @white;
+      opacity: 0.3;
+    }
+  }
+}
+
+.video__button--replay {
   top: 22px;
-  left: 26px;
-  width: 16px;
-  height: 20px;
-  border: none;
-  background-color: fuchsia;
-  cursor: pointer;
+  left: 20px;
 
   @media (min-width: @tablet-width) {
-    top: 9px;
-    left: 36px;
+    top: 7px;
+    left: 29px;
   }
 }
 
-.video__button-subtitles {
-  position: absolute;
+.video__button--subtitles {
   top: 23px;
-  right: 73px;
-  width: 32px;
-  height: 20px;
-  border: none;
-  background-color: lawngreen;
-  cursor: pointer;
+  right: 69px;
 
   @media (min-width: @tablet-width) {
-    top: 9px;
-    right: 93px;
+    top: 8px;
+    right: 86px;
   }
 }
 
-.video__button-full-screen {
-  position: absolute;
+.video__button--full-screen {
   top: 23px;
-  right: 22px;
-  width: 20px;
-  height: 20px;
-  border: none;
-  background-color: orange;
-  cursor: pointer;
+  right: 18px;
 
   @media (min-width: @tablet-width) {
-    top: 9px;
-    right: 41px;
+    top: 8px;
+    right: 35px;
   }
 }
