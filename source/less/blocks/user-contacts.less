@@ -50,14 +50,18 @@
   width: 58px;
   height: 58px;
   background-color: @icon-gray;
-
-  @media (min-width: @desktop-width) {
-    bottom: 11px;
-  }
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .user-contacts--telephone-icon::after {
+  background-image: url("../img/icon-phone.svg");
+
   @media (min-width: @desktop-width) {
-    right: 61px;
+    right: 80px;
   }
+}
+
+.user-contacts--mail-icon::after {
+  background-image: url("../img/icon-mail.svg");
 }
