@@ -27,12 +27,14 @@
   @media (min-width: @desktop-width) {
     &::before {
       top: 45px;
+      left: -79px;
     }
   }
 }
 
 .user-info__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content auto;
   padding-bottom: 20px;
 }
 
