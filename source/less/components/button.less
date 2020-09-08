@@ -2,6 +2,7 @@
   display: block;
   margin: 0 auto;
   padding: 0;
+  padding-top: 5px;
   .title(21px; 26px);
   text-transform: uppercase;
   color: @white;
@@ -20,6 +21,15 @@
   }
 
   &:disabled {
+    background-color: @medium-gray;
+  }
+}
+
+.button-disabled {
+  background-color: @medium-gray;
+
+  &:hover,
+  &:focus {
     background-color: @medium-gray;
   }
 }
