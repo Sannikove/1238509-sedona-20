@@ -144,3 +144,17 @@ const build = gulp.series(
 );
 
   exports.build = build;
+
+  // start
+
+  const start = gulp.series(
+    clean,
+    copy,
+    styles,
+    sprite,
+    html,
+    server,
+    watcher
+  );
+
+  exports.start = start;
