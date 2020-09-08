@@ -37,13 +37,15 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src([
-    "source/*.html"
-  ], {
-    base: "source"
-})
-  .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(gulp.dest("build"))
-  .pipe(sync.stream());
+      "source/*.html"
+    ], {
+      base: "source"
+    })
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
+    .pipe(gulp.dest("build"))
+    .pipe(sync.stream());
 }
 
 exports.html = html;
@@ -53,7 +55,7 @@ exports.html = html;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -78,16 +80,16 @@ exports.default = gulp.series(
 // copy
 
 const copy = () => {
-   return gulp.src([
-        "source/fonts/**/*.{woff,woff2}",
-        "source/img/**",
-        "source/js/**",
-        "source/*.ico"
+  return gulp.src([
+      "source/fonts/**/*.{woff,woff2}",
+      "source/img/**",
+      "source/js/**",
+      "source/*.ico"
     ], {
-        base: "source"
- })
+      base: "source"
+    })
     .pipe(gulp.dest("build"));
-  };
+};
 
 exports.copy = copy;
 
@@ -103,37 +105,43 @@ exports.clean = clean;
 
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
-  .pipe(imagemin([
-  imagemin.optipng({optimizationLevel: 3}),
-  imagemin.mozjpeg({progressive: true}),
-  imagemin.svgo()
-  ]))
-  }
+    .pipe(imagemin([
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
+      imagemin.mozjpeg({
+        progressive: true
+      }),
+      imagemin.svgo()
+    ]))
+}
 
-  exports.images = images;
+exports.images = images;
 
-  // create WebP
+// create WebP
 
-  const createWebp = () => {
+const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
-  .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("source/img"))
- }
+    .pipe(webp({
+      quality: 90
+    }))
+    .pipe(gulp.dest("source/img"))
+}
 
- exports.webp = createWebp;
+exports.webp = createWebp;
 
- //create SVG sprite
+//create SVG sprite
 
- const sprite = () => {
+const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
-  .pipe(svgstore())
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"))
-  }
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"))
+}
 
-  exports.sprite = sprite;
+exports.sprite = sprite;
 
-  // build
+// build
 
 const build = gulp.series(
   clean,
@@ -143,18 +151,18 @@ const build = gulp.series(
   html
 );
 
-  exports.build = build;
+exports.build = build;
 
-  // start
+// start
 
-  const start = gulp.series(
-    clean,
-    copy,
-    styles,
-    sprite,
-    html,
-    server,
-    watcher
-  );
+const start = gulp.series(
+  clean,
+  copy,
+  styles,
+  sprite,
+  html,
+  server,
+  watcher
+);
 
-  exports.start = start;
+exports.start = start;
