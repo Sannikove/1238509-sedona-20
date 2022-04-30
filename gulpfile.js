@@ -12,6 +12,9 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
+const {src, task}= require('gulp');
+const ghPages = require('gulp-gh-pages');
+
 
 // Styles
 
@@ -166,3 +169,7 @@ const start = gulp.series(
 );
 
 exports.start = start;
+
+// Publishing to GHpages
+
+task('deploy', () => src('./build/**/*').pipe(ghPages()));
